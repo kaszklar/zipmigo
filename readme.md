@@ -44,7 +44,7 @@ zipmigo.unzip("censustracts.zip")
 ```
 
 ### Release History
-[1.0.0] 2020.02.13
+[1.0.0] 2020.02.13  
 Initial Release :tada:
 
 ### Future features
