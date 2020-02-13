@@ -2,7 +2,7 @@
 Zipmigo is intended to assist fledgling data analysts and scientists with the process of downloading a zip file via http and unzipping it into the working directory when working in a notebook environment, saving them time and energy wading through `os`, `requests`, and running shell commands to inspect the directory structure.
 
 ### Story
-This package was born of the author's hatred for recursive folders within zip files, as well as her need to use the same commands over and over again to download & unpack zip archives. Over the course of a project, she found herself constantly reusing code snippets - a sign that one should wrap it up into a script. However, she was working in google colab, which was designed for collaborative notebook workflows. It seemed that distributing a package on PyPi was the easiest way to import a script into colab for her audience, and thus zipmigo was born. s
+This package was born of the author's hatred for recursive folders within zip files, as well as her need to use the same commands over and over again to download & unpack zip archives. Over the course of a project, she found herself constantly reusing code snippets - a sign that one should wrap it up into a script. However, she was working in google colab, which was designed for collaborative notebook workflows. It seemed that distributing a package on PyPi was the easiest way to import a script into colab for her audience, and thus zipmigo was born. 
 
 ### Installation
 Zipmigo is available from PyPi via `pip install zipmigo`.
