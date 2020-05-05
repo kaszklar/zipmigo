@@ -5,7 +5,7 @@ Zipmigo is intended to assist fledgling data analysts and scientists with the pr
 This package was born of the author's hatred for recursive folders within zip files, as well as her need to use the same commands over and over again to download & unpack zip archives. Over the course of a project, she found herself constantly reusing code snippets - a sign that one should wrap it up into a script. However, she was working in google colab, which was designed for collaborative notebook workflows. It seemed that distributing a package on PyPi was the easiest way to import a script into colab for her audience, and thus zipmigo was born.
 
 ### Installation
-Zipmigo is available from PyPi via `pip install zipmigo`.
+Zipmigo is available for commandline installation from PyPi via `pip install zipmigo`.
 
 #### Google Colab
 Run `!pip install zipmigo`  
@@ -18,19 +18,21 @@ Or, as of February 2020, to pull in Zipmigo *directly from github*;
 ```
 
 ### Examples
+#### Importing
+If you installed via pip:  
+`from zipmigo import zipmigo`  
+If you are working from the source file:  
+`import zipmigo`  
+
 #### Download a zip file
 Download a file to the current working directory. The status of the connection and the progress of the download will be printed out.
 
 ```python  
-import zipmigo
-
-zipmigo.download("https://storage.googleapis.com/qmss-gis-bucket/CensusTracts_2.zip", "censustracts.zip")
+zipmigo.download("https://geo.nyu.edu/download/file/harvard-ntadcd106-shapefile.zip", 'congressdistricts.zip')
 ```
 
 #### Print out the contents of the current working directory & subdirectories
 ```python
-import zipmigo
-
 zipmigo.list_dir()
 ```
 
@@ -38,16 +40,17 @@ zipmigo.list_dir()
 Unpack zip file into current directory. If the archive has only directories in the root, those directories will be placed in the current working directory.
 
 ```python
-import zipmigo
-
-zipmigo.unzip("censustracts.zip")
+zipmigo.unzip("congressdistricts.zip")
 ```
 
 ### Release History
-[1.0.0] 2020.02.13  
-Initial Release :tada:
+[1.0.1] 2020.05.05  
+Some error handling and type assertions  
+Correct readme instructions  
 
-### Future features
-* Error handling
+[1.0.0] 2020.02.13  
+Initial Release :tada:  
+
+### Future features?
 * Inspect zip archive prior to opening
 * Extract a single file from the archive

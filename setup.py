@@ -5,7 +5,7 @@ with open("readme.md", "r") as fh:
 
 setuptools.setup(
     name="zipmigo", # Replace with your own username
-    version="1.0.0",
+    version="1.0.1",
     author="Kathryn Aszklar",
     author_email="kea2143@columbia.edu",
     description="Simple package to download & unzip archives within notebooks.",
@@ -19,5 +19,5 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
-    install_requires=['tqdm>=4.42.1', 'requests>=2.22.0']
+    install_requires=['tqdm>=4.38', 'requests>=2.22.0']
 )
