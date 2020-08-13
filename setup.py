@@ -5,8 +5,8 @@ with open("readme.md", "r") as fh:
 
 setuptools.setup(
     name="zipmigo", # Replace with your own username
-    version="1.0.1",
-    author="Kathryn Aszklar",
+    version="1.1.0",
+    author="Katie Aszklar",
     author_email="kea2143@columbia.edu",
     description="Simple package to download & unzip archives within notebooks.",
     long_description=long_description,

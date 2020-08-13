@@ -10,18 +10,11 @@ Zipmigo is available for commandline installation from PyPi via `pip install zip
 #### Google Colab
 Run `!pip install zipmigo`  
 
-Or, as of February 2020, to pull in Zipmigo *directly from github*;
-```sh
-!curl --remote-name \
-     -H 'Accept: application/vnd.github.v3.raw' \
-     --location https://raw.githubusercontent.com/kaszklar/zipmigo/master/zipmigo.py
-```
+#### From Source
+`git clone https://github.com/kaszklar/zipmigo.git` to your directory of choice. `cd zipmigo` and install with `python setup.py install`.  
 
 ### Examples
 #### Importing
-If you installed via pip:  
-`from zipmigo import zipmigo`  
-If you are working from the source file:  
 `import zipmigo`  
 
 #### Download a zip file
@@ -44,12 +37,16 @@ zipmigo.unzip("congressdistricts.zip")
 ```
 
 ### Release History
+[1.1.0] 2020.08.12  
+Refactor for namespace  
+Adjust download control flow    
+
 [1.0.1] 2020.05.05  
 Some error handling and type assertions  
 Correct readme instructions  
 
 [1.0.0] 2020.02.13  
-Initial Release :tada:  
+Initial Release 🎉  
 
 ### Future features?
 * Inspect zip archive prior to opening
